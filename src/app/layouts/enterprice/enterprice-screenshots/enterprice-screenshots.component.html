@@ -1,0 +1,39 @@
+<!-- screenshot section Start-->
+
+<section class="app1 screenshot bg-theme" id="screenshot">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 m-b-10">
+              <div class="title title1">
+                  <div class="main-title">
+                      <h2 class="text-white">R-MANN LE PHILOSOPHE FOU </h2>
+                  </div>
+                  <div class="sub-title">
+                      <p class="text-white para">Tant que tu le veux tu peux y arriver
+                          </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row set-relative">
+          <div class="col-12">
+              <!-- Swiper -->
+              <div class="swiper-container" [swiper]="config" [(index)]="index">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide" *ngFor="let slide of slides">
+                          <img  (click)="Affiche()" [src]="slide.img" class="img-fluid">
+
+                      <p style=" width:100% ;color: whitesmoke; position:center; font-size: 15px ; padding-top: 45px ; padding-left:50%  ; height: 100%">
+                          {{slide.nom}}
+                      </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="set-abs screen-container">
+
+          </div>
+      </div>
+  </div>
+</section>
+<!-- screenshot section end-->

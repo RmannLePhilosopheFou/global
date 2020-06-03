@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataXconnexion</title>
+</head>
+
+<body>
+
+<div class="section">
+
+  <h1 [ngStyle]="{color:'wight'}" *ngIf="secondes>=6">DataXConnexion</h1>
+
+  <div class="video-container">
+
+    <video (ended)="goToTheNextPage()" autoplay="autoplay">
+      <source src="assets/video/video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
+</body>
+
+</html>
